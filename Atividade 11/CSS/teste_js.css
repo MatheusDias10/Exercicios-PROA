@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    margin: 30px;
+}
+
+div{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: 5px double;
+    font-size: 16px;
+    text-align: justify;
+    top: 200px;
+    left: 400px;
+    visibility: hidden;
+}
+
+div img{
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+
+#mercedes{
+    background-color: #F00;
+    color: #FD0;
+    border-color: #FD0;
+}
+
+#veneno{
+    background-color: grey;
+    color: #000;
+    border-color: #000;
+}
+
+#jetta{
+    background-color: darkviolet;
+    color: navy;
+    border-color: navy;
+}

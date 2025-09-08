@@ -1,0 +1,60 @@
+#fundo{
+    position: relative;
+    width: 90%;
+    height: 660px;
+    background-color: #ccc;
+    margin: auto; /* Centraliza o Componente */ 
+}
+
+#camada1{
+    position: relative;
+    width: 11%;
+    height: 110px;
+    background-color: #0F0;
+    border: 1px solid #0F0;
+    text-align: center;
+    font-size: 17px;
+    float: left; /* Encaixar à Esquerda */
+}
+
+#camada2{
+    position: relative;
+    width: 80%;
+    height: 110px;
+    background-color: #F00;
+    border: 1px solid #F00;
+    text-align: center;
+    font-size: 17px;
+    float: left; /* Encaixar à Esquerda */
+}
+
+#camada3{
+    position: relative;
+    width: 91%;
+    height: 45px;
+    background-color: #00F;
+    border: #00F solid 2px;
+    text-align: center;
+    font-size: 17px;
+    clear: left; /* Quebra a Sequencia de Floats */
+}
+
+#camada4{
+    position: relative;
+    width: 90%;
+    height: 350px;
+    background-color: #6F2;
+    border: #000 solid 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+#camada5{
+    position: relative;
+    width: 91%;
+    height: 40px;
+    background-color: #b0f ;
+    border: #b0f solid 3px;
+    text-align: center;
+    font-size: 17px;
+}

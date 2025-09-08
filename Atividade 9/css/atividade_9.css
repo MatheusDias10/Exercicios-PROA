@@ -1,0 +1,255 @@
+/* css reset */
+
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+body{
+    position: relative;
+    color: #fff;
+    font-family: Verdana;
+    text-align: center;
+}
+
+
+main{
+    width: 90%;
+    height: 700px;
+    background-color: white;
+    margin: auto;
+}
+
+
+#titulo_pagina{
+    width: 100%;
+    height: 120px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu_superior{
+    width: 100%;
+    height: 40px;
+    background-color: #00F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu_superior a{
+    color: #fff;
+    text-decoration: none;
+    width: 16.67%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#menu_superior a:hover{
+    background-color: #fff;
+    color: #00F;
+    transition: all 1s;
+}
+
+
+#menu_lateral{
+    width: 20%;
+    height: 480px;
+    background-color: dimgray;
+    float: left;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu_lateral a{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #777;
+    color: #fff;
+    padding: 11.6px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    text-align: left;
+}
+
+#menu_lateral a:hover{
+    background-color: #000;
+    border-color: #F00;
+    transition: all 0.5s;
+}
+
+#meio{
+    width: 58%;
+    height: 480px;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#titulo_meio{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #000;
+}
+
+#div_meio{
+    width: 100%;
+    height: 170px;
+    background-color: brown;
+}
+
+#div_meio img{
+    width: 100%;
+    height: 100%;
+}
+
+#meio p{
+    width: 100%;
+    height: 110px;
+    font-size: 13px;
+    text-align: left;
+    color: #000;
+    background-color: #CCC;
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+#container{
+    width: 100%;
+    height: 140px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.caixa{
+    width: 30%;
+    height: 140px;
+    background-color: darkslategray;
+}
+
+#caixa1{
+    background-image: url("../images/plano_de_fundo.jpg");
+    background-size: cover;
+}
+#caixa2{
+    background-image: url("../images/plano_de_fundo_dois.jpg");
+    background-size: cover;
+}
+#caixa3{
+    background-image: url("../images/sol.jpg");
+    background-size: cover;
+}
+
+aside{
+    width: 20%;
+    height: 480px;
+    float: left;
+}
+
+aside img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    clear: left;
+}
+
+
+/* Visualização Mobile */
+
+@media only screen and (max-width:480px){
+
+    main{
+        width: 98%;
+    }
+
+    #menu_superior{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        
+    }
+
+    #menu_superior a{
+        width: 100%;
+        background-color: #00F;
+        margin-top: 3px;
+    }
+
+    #menu_lateral, aside, p, #div_meio{
+        display: none;
+    }
+
+    #meio{
+        width: 100%;
+    }
+
+    .caixa{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #container{
+        height: auto;
+        flex-direction: column;
+    }
+
+    footer{
+        float: left;
+    }
+}
+
+
+
+
+
+/* Visualização Tablet */
+
+@media only screen and (min-width:481px){
+    @media only screen and (max-width:720px){
+
+        main{
+            width: 95%;
+        }
+
+        #menu_superior{
+            height: 80px;
+            flex-wrap: wrap;
+        }
+
+        #menu_superior a{
+            width: 33.3%;
+            color: #FF0;
+        }
+
+
+        #menu_lateral, aside{
+            display: none;
+        }
+
+        #meio{
+            width: 100%;
+        }
+    }
+}

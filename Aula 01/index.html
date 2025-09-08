@@ -1,0 +1,169 @@
+<!-- HTML: É a estrutura onde se aplica o conteúdo do site, geralmente textos, fotos, imagens, links e etc. -->
+
+<!DOCTYPE html><!-- Versão 5.0 do HTML -->
+<html lang="pt-br"><!-- Faz o site entender os acentos da linguia portuguesa. -->
+<head>
+    <meta charset="UTF-8"><!-- Ele entende os caracteres -->
+    <meta name="keywords" content="Conteúdo sobre o site"><!-- Palavras chaves para encontrarem seu site com facilidade ao pesquisar. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Proa">
+    <title>Primeira Aula</title> <!-- O conteúdo que vai no title, invés de ir para a página ele vai ao cabeçalho, ou seja, na "aba". -->
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        body{
+            font-size: 20px; /* Tamanho da fonte */
+            color: blue; /* Cor da fonte */
+            font-family: verdana; /* Tipo da fonte */
+            background-color: burlywood; /* Cor de fundo do site */
+            background-image: url(imagens/transferir.jpeg); /* Você coloca uma imagem de fundo na página */
+            background-repeat: no-repeat; /* Ele faz com que a imagem não se repita no plano de fundo */
+            background-position: center center; /* Você escolhe aonde a imagem fica no plano de fundo */
+            background-attachment: fixed; /* Ele fixa a imagem no fundo */
+            background-size: cover; /* Preenche o plano de fundo com a imagem */
+        }
+
+        h1{
+            font-size: 18px; /* Tamanho da fonte do H1 */
+            color: brown; /* Cor da fonte H1 */
+            text-align: center; /* Alinhamento do texto na página */
+            font-family: impact; /* Tipo de fonte */
+            background-color: black; /* Corde de fundo do H1 */
+        }
+
+        h2{
+            font-size: 25px; /* Tamanho da fonte do H2 */
+            color: blueviolet; /* Cor da fonte H1 */
+            text-align: center; /* Alinhamento do texto na página */
+            font-family: serif; /* Tipo de fonte */
+            background-color: darkred; /* Cor de fundo do H2 */
+        }
+
+        h3{
+            font-size: 28px;
+            width: 600px; /* Atributo de largura */
+            font-weight: normal; /* Tira o negrito do titulo */
+            color: indigo;
+            text-align: center; /* Centraliza com a largura dos pixels */
+            font-family: inherit;
+            background-color: black;
+        }
+
+        h4,h5,h6{
+            font-size: 1em;
+            width: 900px; /* Atributo de largura */
+            font-weight: normal; /* Tira o negrito do titulo */
+            color: rgb(42, 184, 223);
+            text-align: center; /* Centraliza com a largura dos pixels */
+            font-family: inherit;
+            background-color: rgb(203, 78, 170);
+        }
+
+        h4{
+            background: white;
+            margin: auto;
+            border: 5px solid red;
+        }
+
+        h5{
+            margin-left: 250px;
+            /*margin-bottom: 0;*/
+        }
+
+        h6{
+            margin: 0;
+        }
+
+        .diferente{
+            background-color: darkblue; /* Cor do background do H3 */
+            color: yellow; /* Cor da mensagem */
+        }
+
+        .pequena{
+            width: 200px; /* Largura */
+            height: 150px; /* Altura */
+        }
+
+        .media{
+            width: 250px; /* Largura */
+            height: 230px; /* Altura */
+        }
+
+        .grande{
+            width: 300px; /* Largura */
+            height: 270px; /* Altura */
+            border: 3px dashed blue;
+        }
+
+    </style>
+
+</head
+<body>
+    <!-- Cada h(numero) tem um tamanho especifico, e tmabém uma hierarquia de importância. -->
+    <h1>Teste de conteúdo de página</h1>
+    <h2>Teste de conteúdo de página</h2>
+
+    <h3>Teste de conteúdo de página</h3>
+    <h3 class="diferente">Teste de conteúdo de página</h3>
+    <h3>Teste de conteúdo de página</h3>
+
+    <h4>Teste de conteúdo de página</h4>
+    <h5>Teste de conteúdo de página</h5>
+    <h6>Teste de conteúdo de página</h6>
+
+    <!-- Lista ordenada, é usada para criar uma lista de itens que têm uma ordem especifica. -->
+    <ol type="A" start="2"><!-- A sequência tem referência como alfabeto maiusculo, como ABC. Ela já começa no segudo item da lista.-->
+    <li>teste</li>
+    <li>teste 2</li>
+    <li>teste 3</li>
+    <li>teste 4</li>
+    <li>teste 5</li>
+    </ol>
+
+    <!-- Lista não ordenada, é usada para criar uma lista de itens que não tem uma ordem especifica. -->
+    <ul style="list-style-type:armenian" ><!-- Foi utilizado um estilo para identificar a cada item da lista.  -->
+    <li>teste 1</li>
+    <li>teste 2</li>
+    <li>teste 3</li>
+    <li>teste 4</li>
+    <li>teste 5</li>
+    </ul>
+
+    <h1>Imagens</h1><!-- Imagens aplicados na estrutura do site. Alt é a mensagem que vai aparecer caso a foto não carregue. Src é o que procura a foto.
+    Title é o titulo da foto quando se passa o mouse acima. -->
+
+    <img class="pequena" src="imagens/background01.webp"
+     alt="Background de Fundo" title="Foto de um Background Colorido">
+     
+    <img class="media" src="imagens/background02.webp"
+     alt="Backgorund de Fundo" title="Foto de um Background Colorido">
+
+    <img class="grande" src="imagens/background03.webp"
+     alt="Background de Fundo" title="Foto de um Background Colorido">
+
+    <img class="pequena" src="imagens/background04.webp"
+     alt="Background de Fundo" title="Foto de um Background Colorido">
+
+    <img class="media" src="imagens/background05.webp"
+     alt="Background de Fundo" title="Foto de um Background Colorido">
+
+    <img class="grande" src="imagens/background06.webp"
+     alt="Background de Fundo" title="Foto de um Background Colorido">
+    
+    <h1>Hyperlink</h1> 
+    <a href="background.html">Clique Aqui</a><br> <!-- Link do site alternativo na mensagem "Clique Aqui". O BR serve para pular linha -->
+
+    <h1>Hyperlink de outro site</h1>
+    <a href="https://www.youtube.com/@BigodeEnsina" target="_blank">Canal BigodeEnsina</a>
+    
+</body>
+</html>
+
+
+<!-- Anotações: 
+    
+    1. A tag meta não tem fechamento pois é uma tag para configuração e mecanismo de busca da página.
+    Ela geralmente fica dentro da tag Head. 
+    
+    2. O Margin serve para deslocar componentes entre as páginas. O Margin bottom desloca para cima e para baixo.
+    Já o Margin normal desloca para os lados.
+    -->
