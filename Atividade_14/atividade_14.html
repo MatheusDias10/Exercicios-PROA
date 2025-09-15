@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 com Switch Case</title>
+</head>
+<body>
+    <script>
+
+        let combo = parseInt(prompt("Escolha um combo do 1 até o 5: "))
+
+        switch(combo){
+            case 1:
+                document.write("Você escolheu o combo 1: Hambúrguer, Batata Frita e Refrigerante - R$ 20,00"); break;
+            
+            case 2:
+                document.write("Você escolheu o combo 2: Cachorro Quente, Batata Frita e Suco - R$ 18,00"); break;
+
+            case 3:
+                document.write("Você escolheu o combo 3: Pizza, Refrigerante e Sobremesa - R$ 25,00"); break;
+
+            case 4:
+                document.write("Você escolheu o combo 4: Salada, Frango Grelhado e Água - R$ 22,00"); break;
+
+            case 5:
+                document.write("Você escolheu o combo 5: Hamburguer monstro, Coca Cola e Milkshake - R$ 80,00"); break;
+
+            default:
+                document.write("Combo inválido! Por favor, escolha um número entre 1 e 5."); break;
+        }
+
+    </script>
+</body>
+</html>
