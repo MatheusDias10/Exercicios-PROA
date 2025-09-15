@@ -1,0 +1,25 @@
+<!-- 12) Crie um programa que leia o peso e a altura de uma pessoa e exiba o seu Índice de Massa Corporal (IMC). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    
+    <script>
+
+        let peso = parseFloat(prompt("Digite seu peso: "))
+        let altura = parseFloat(prompt("Digite sua altura: "))
+
+        calculo_imc = peso / (altura ** 2)
+
+        document.write("O seu ìndice de massa corporal é de " + calculo_imc.toFixed(2))
+
+    </script>
+
+</body>
+</html>
+

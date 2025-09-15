@@ -1,0 +1,25 @@
+<!-- 14) Escreva um programa que leia a idade de uma pessoa em anos, meses e dias, e calcule quantos dias de vida ela tem. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    
+    <script>
+
+        let ano = parseInt(prompt("Quantos anos você tem: "))
+        let meses = parseInt(prompt("Quantos meses você tem: "))
+        let dias = parseInt(prompt("Quantos dias você tem: "))
+
+        let totaldias = (ano * 365) + (meses * 30) + dias
+
+        document.write("Aproximadamente você tem " + totaldias + "dias de vida")
+
+    </script>
+
+</body>
+</html>

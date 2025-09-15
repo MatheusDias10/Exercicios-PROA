@@ -1,0 +1,27 @@
+<!-- 8) Escreva um programa que leia dois números inteiros e troque os seus valores, ou seja, o primeiro deve ficar com o valor do segundo e vice-versa.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    
+    <script>
+
+        let n1 = parseInt(prompt("Digite um número"))
+        let n2 = parseInt(prompt("Digite outro número"))
+
+        let temp = n1 /* Salva o valor de n1 */
+        n1 = n2
+        n2 = temp /* Utiliza o valor salvo de n1 no n2 */
+
+        document.write("Número 1 = " + n1 + "<br>")
+        document.write("Número 2 = " + n2)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- 23) Escreva um programa que leia o nome de um mês e exiba a quantidade de dias que ele possui. Considere apenas meses válidos. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    <script>
+
+        let mes = prompt("Digite o nome de um mês: ").toLowerCase();
+
+        switch(mes) {
+            case "janeiro": case "março": case "maio": case "julho": case "agosto": case "outubro": case "dezembro":
+                alert("O mês de " + mes + " possui 31 dias."); break;
+
+            case "abril": case "junho": case "setembro": case "novembro":
+                alert("O mês de " + mes + " possui 30 dias."); break;
+                
+            case "fevereiro":
+                alert("O mês de fevereiro possui 28 ou 29 dias, dependendo se o ano é bissexto."); break;
+
+            default:
+                alert("Mês inválido. Por favor, insira um nome de mês válido.");
+        }
+
+        /* Fiz com switch case pois hoje teve aula sobre isso, mas poderia ser feito com if else também. */
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- 7) Faça um programa que receba o salário base de um funcionário e calcule o seu salário líquido, considerando que o funcionário recebe 5% de comissão sobre o salário base.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    
+    <script>
+
+        let salario_base = parseFloat(prompt("Digite seu salário base:"))
+
+        salario_liquido = (salario_base * 0.05) + salario_base
+
+        document.write("O seu salário líquido é de: " + salario_liquido.toFixed(2))
+    </script>
+
+</body>
+</html>

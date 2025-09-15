@@ -1,0 +1,42 @@
+<!-- 26) Escreva um programa que leia o código de um produto e a quantidade comprada, e exiba o valor total a ser pago. Considere que cada produto tem um preço diferente. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 26</title>
+</head>
+<body>
+    <script>
+
+        let codigo = parseInt(prompt("Digite o código do produto (1 a 5): "))
+        let quantidade = parseInt(prompt("Digite a quantidade comprada: "))
+
+        if (codigo >= 1 && codigo <= 5 && quantidade > 0) {
+            let preco;
+
+            switch(codigo) {
+                case 1:
+                    preco = 10.00; break;
+                case 2:
+                    preco = 15.50; break;
+                case 3:
+                    preco = 7.30; break;
+                case 4:
+                    preco = 22.40; break;
+                case 5:
+                    preco = 5.00; break;
+            }
+
+            let total = preco * quantidade;
+            document.write("O valor total a ser pago é: R$ " + total.toFixed(2));
+        } else {
+            document.write("Código do produto ou quantidade inválida.");
+        }
+
+        /* Esse foi dificil  */
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- 19) Faça um programa que receba três notas de um aluno e exiba se ele foi aprovado ou reprovado. A média para aprovação é 7. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    
+    <script>
+
+        let nota1 = parseFloat(prompt("Digite sua primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite sua segunda nota: "))
+        let nota3 = parseFloat(prompt("Digite sua terceira nota: "))
+
+        media_notas = (nota1 + nota2 + nota3) / 3
+
+        if (media_notas >= 7) {
+            document.write("Parabéns, você foi aprovado!!!")
+
+        } else if (media_notas < 6) {
+            document.write("Infelizmente você foi reprovado. Estude mais!!!")
+
+        } else {
+            document.write("Não foi possível calcular sua média de notas.")
+        }
+
+    </script>
+
+</body>
+</html>

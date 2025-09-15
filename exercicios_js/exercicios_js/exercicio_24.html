@@ -1,0 +1,26 @@
+<!-- 24) Crie um programa que leia três números inteiros e exiba-os em ordem crescente. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 24</title>
+</head>
+<body>
+    <script>
+
+        let n1 = parseInt(prompt("Digite o primeiro número: "))
+        let n2 = parseInt(prompt("Digite o segundo número: "))
+        let n3 = parseInt(prompt("Digite o terceiro número: "))
+
+        let numeros = [n1, n2, n3]
+
+        function ordenarCrescente(a, b) {
+            return a - b;
+        }
+
+        document.write("Números em ordem crescente: " + numeros.sort(ordenarCrescente))
+    </script>
+</body>
+</html>
