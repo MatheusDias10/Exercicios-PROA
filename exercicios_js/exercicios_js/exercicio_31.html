@@ -1,0 +1,21 @@
+<!-- 31) Faça um programa que leia o valor do salário-mínimo e o salário de um funcionário, e exiba quantos salários-mínimos ele recebe. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 31</title>
+</head>
+<body>
+    <script>
+
+        let salario_usuario = parseFloat(prompt("Digite o valor do seu salário:"));
+        let salario_minimo = 1518;
+        let quantidade_salarios = salario_usuario / salario_minimo;
+
+        document.write(`Você recebe ${quantidade_salarios.toFixed(1)} salários mínimos.`);
+
+    </script>
+</body>
+</html>

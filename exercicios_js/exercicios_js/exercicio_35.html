@@ -1,0 +1,24 @@
+<!-- 35) Escreva um programa que leia três números inteiros e exiba a média aritmética. Se a média for maior ou igual a 7, exiba a mensagem "Aprovado", caso contrário, exiba a mensagem "Reprovado". -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 35</title>
+</head>
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+        let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+        let num3 = parseInt(prompt("Digite o terceiro número inteiro:"));
+
+        let media = (num1 + num2 + num3) / 3;
+        let situacao = (media >= 7) ? "Aprovado" : "Reprovado";
+
+        document.write(`A média aritmética é ${media.toFixed(2)}. Situação: ${situacao}.`);
+
+    </script>
+</body>
+</html>
