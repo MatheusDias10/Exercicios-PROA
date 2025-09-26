@@ -1,0 +1,7 @@
+section {
+    position: relative;
+    width: 98%;
+    height: 20rem;
+    background-color: yellow;
+    border: 10px solid red;
+}
