@@ -1,0 +1,18 @@
+.le_esquerdo {
+    position: relative;
+    width: 15%;
+    height: 30rem;
+    background-color: darkslategray;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quadro_branco {
+    width: 90%;
+    height: 6rem;
+    background-color: white;
+    align-items: center;
+    margin-top: 10px;
+}
