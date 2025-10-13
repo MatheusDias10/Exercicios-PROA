@@ -1,0 +1,364 @@
+/* ===== RESET ===== */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+  background-image: url("../img/guitarras_header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-superior {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 15px 25px;
+}
+
+.menu-superior a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+#space_one {
+  width: 100%;
+  height: 400px;
+  background-color: #b14d3a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+#texto_loja {
+  background-color: #fff;
+  color: #222;
+  width: 46%;
+  height: 350px;
+  margin-left: 2%;
+  border-radius: 8px;
+}
+
+#texto_loja h2 {
+  font-size: 1.4rem;
+  padding: 20px 20px 10px;
+}
+
+#texto_loja p {
+  padding: 0 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#imagem_loja {
+  width: 46%;
+  height: 350px;
+  margin-right: 2%;
+  background-image: url("../img/loja.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+#space_two {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #eaf7fa;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.produto {
+  background-image: url("../img/guitarrinha.jpg");
+  background-color: #fff;
+  width: 22%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px 10px 25px;
+}
+
+.produto img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.produto .preco {
+  font-weight: bold;
+  color: #d00;
+  font-size: 1.1rem;
+}
+
+#space_three {
+  width: 100%;
+  background-color: #b8642a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+#mapa {
+  width: 55%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#info_loja {
+  width: 40%;
+  height: 300px;
+  background-color: #c97b6a;
+  border-radius: 10px;
+  padding: 25px;
+  color: #fff;
+}
+
+#info_loja h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#space_four {
+  width: 100%;
+  margin: auto;
+  background-color: #deb1a8;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  gap: 40px;
+}
+
+#formulario_contato {
+  width: 48%;
+}
+
+#formulario_contato form {
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario_contato label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#formulario_contato input,
+#formulario_contato textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+#formulario_contato textarea {
+  resize: none;
+  height: 120px;
+}
+
+#formulario_contato input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+#redes_sociais {
+  width: 45%;
+  text-align: center;
+}
+
+#redes_sociais h2 {
+  color: #001b7b;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#redes_sociais .icones {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#redes_sociais img {
+  width: 75px;
+  height: 75px;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer .icones-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+footer .icones-footer img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 1024px) {
+  .menu-superior {
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 25px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    height: 180px;
+  }
+
+  .menu-superior {
+    position: static;
+    transform: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  #space_one {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #texto_loja,
+  #imagem_loja {
+    width: 100%;
+    height: auto;
+    margin: 0 0 15px 0;
+  }
+
+  #space_two {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .produto {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #space_three {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #mapa,
+  #info_loja {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  #space_four {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  #formulario_contato,
+  #redes_sociais {
+    width: 100%;
+  }
+
+  #formulario_contato input[type="submit"] {
+    width: 60%;
+    align-self: center;
+  }
+
+  #redes_sociais h2 {
+    margin-top: 20px;
+  }
+
+  #redes_sociais .icones {
+    gap: 15px;
+  }
+
+  #redes_sociais img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 15px 0;
+  }
+
+  footer .icones-footer img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-superior {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .produto {
+    width: 95%;
+  }
+
+  #formulario_contato input[type="submit"] {
+    width: 80%;
+  }
+}
