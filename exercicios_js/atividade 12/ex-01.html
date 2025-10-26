@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 01</title>
+</head>
+<body>
+
+  <script>
+
+    let prato = parseInt(prompt("Escolha o prato (1 a 4):"));
+    let sobremesa = parseInt(prompt("Escolha a sobremesa (1 a 4):"));
+    let bebida = parseInt(prompt("Escolha a bebida (1 a 4):"));
+
+    let caloriasPrato = 0;
+    let caloriasSobremesa = 0;
+    let caloriasBebida = 0;
+
+    switch (prato) {
+      case 1: caloriasPrato = 180; break;
+      case 2: caloriasPrato = 230; break;
+      case 3: caloriasPrato = 250; break;
+      case 4: caloriasPrato = 350; break;
+      default: alert("Prato inválido!");
+    }
+
+    switch (sobremesa) {
+      case 1: caloriasSobremesa = 75; break;
+      case 2: caloriasSobremesa = 110; break;
+      case 3: caloriasSobremesa = 170; break;
+      case 4: caloriasSobremesa = 200; break;
+      default: alert("Sobremesa inválida!");
+    }
+
+    switch (bebida) {
+      case 1: caloriasBebida = 20; break;
+      case 2: caloriasBebida = 70; break;
+      case 3: caloriasBebida = 100; break;
+      case 4: caloriasBebida = 65; break;
+      default: alert("Bebida inválida!");
+    }
+
+    let totalCalorias = caloriasPrato + caloriasSobremesa + caloriasBebida;
+
+    document.write("Total de calorias da refeição: " + totalCalorias + " kcal");
+  </script>
+</body>
+</html>

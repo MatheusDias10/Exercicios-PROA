@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 23</title>
+</head>
+<body>
+  <script>
+
+    let faixa1 = 0;
+    let faixa2 = 0;
+    let faixa3 = 0;
+
+    for (let i = 1; i <= 20; i++) {
+      let numero = parseFloat(prompt("Digite o " + i + " número:"));
+
+      if (numero >= 0 && numero <= 100) {
+        faixa1++;
+
+      } else if (numero >= 101 && numero <= 200) {
+        faixa2++;
+
+      } else if (numero > 200) {
+        faixa3++;
+      }
+    }
+
+    document.write("Quantidade de números entre 0 e 100: " + faixa1 + "<br>");
+    document.write("Quantidade de números entre 101 e 200: " + faixa2 + "<br>");
+    document.write("Quantidade de números maiores que 200: " + faixa3);
+
+  </script>
+</body>
+</html>

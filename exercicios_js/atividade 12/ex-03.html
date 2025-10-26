@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 3</title>
+</head>
+<body>
+
+  <script>
+    let saldoMedio = parseFloat(prompt("Informe o saldo médio do cliente:"));
+
+    let credito = 0;
+
+    if (saldoMedio <= 500) {
+      credito = 0;
+    } 
+    else if (saldoMedio <= 1000) {
+      credito = saldoMedio * 0.30;
+    } 
+    else if (saldoMedio <= 3000) {
+      credito = saldoMedio * 0.40;
+    } 
+    else {
+      credito = saldoMedio * 0.50;
+    }
+
+    document.write("Saldo médio: R$ " + saldoMedio.toFixed(2) + "\nCrédito concedido: R$ " + credito.toFixed(2));
+  </script>
+</body>
+</html>

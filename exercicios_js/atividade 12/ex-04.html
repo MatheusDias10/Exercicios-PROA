@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 4</title>
+</head>
+<body>
+  <script>
+
+    let A = parseFloat(prompt("Digite o primeiro valor (A):"));
+    let B = parseFloat(prompt("Digite o segundo valor (B):"));
+    let C = parseFloat(prompt("Digite o terceiro valor (C):"));
+
+    let numeros = [A, B, C];
+
+    numeros.sort(function(x, y) {
+      return y - x;
+    });
+
+    document.write("Valores em ordem decrescente: " + numeros.join(", "));
+  </script>
+</body>
+</html>
