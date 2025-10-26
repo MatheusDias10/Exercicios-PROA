@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 28</title>
+</head>
+<body>
+  <script>
+
+    let numero = prompt("Digite um número inteiro:");
+    let i = 0;
+
+    document.write("Dígitos do número " + numero + ":<br>");
+
+    do {
+      document.write(numero.charAt(i) + "<br>"); /* Primeira vez usando o charAt e lenght */
+      i++;
+    } while (i < numero.length);
+
+  </script>
+</body>
+</html>
