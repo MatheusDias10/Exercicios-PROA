@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 83</title>
+</head>
+<body>
+  <script>
+
+    let numeros = []
+    let soma = 0
+
+    for (let i = 0; i < 7; i++) {
+      let n = parseInt(prompt("Digite o " + (i + 1) + "º número:"))
+      numeros.push(n)
+      soma += n
+    }
+
+    let media = soma / 7
+
+    document.write("A média dos números é: " + media.toFixed(2))
+    
+  </script>
+</body>
+</html>

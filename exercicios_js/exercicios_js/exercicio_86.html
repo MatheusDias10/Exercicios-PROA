@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 86</title>
+</head>
+<body>
+  <script>
+
+    let numeros = []
+
+    for (let i = 0; i < 10; i++) {
+      numeros.push(parseInt(prompt("Digite o " + (i + 1) + "º número:")))
+    }
+
+    numeros.sort((a, b) => a - b)
+    
+    document.write("Números em ordem crescente: " + numeros.join(", "))
+
+  </script>
+</body>
+</html>

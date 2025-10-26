@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 109</title>
+</head>
+<body>
+  <script>
+
+    let m = []
+    let identidade = true
+
+    for (let i = 0; i < 3; i++) {
+      m[i] = []
+      
+      for (let j = 0; j < 3; j++) {
+        m[i][j] = parseInt(prompt("Número [" + i + "][" + j + "]:"))
+        if ((i === j && m[i][j] !== 1) || (i !== j && m[i][j] !== 0)) identidade = false
+      }
+    }
+
+    document.write(identidade ? "É uma matriz identidade." : "Não é matriz identidade.")
+
+  </script>
+</body>
+</html>

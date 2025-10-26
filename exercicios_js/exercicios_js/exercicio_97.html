@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 97</title>
+</head>
+<body>
+  <script>
+    let m = []
+    let soma = 0
+    for (let i = 0; i < 2; i++) {
+      m[i] = []
+      for (let j = 0; j < 2; j++) {
+        m[i][j] = parseInt(prompt("Número [" + i + "][" + j + "]:"))
+        soma += m[i][j]
+      }
+    }
+    document.write("Matriz 2x2:<br>")
+    for (let i = 0; i < 2; i++) {
+      document.write(m[i].join(" ") + "<br>")
+    }
+    document.write("<br>Soma dos elementos: " + soma)
+  </script>
+</body>
+</html>

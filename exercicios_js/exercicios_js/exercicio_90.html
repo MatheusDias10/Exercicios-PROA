@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 90</title>
+</head>
+<body>
+  <script>
+
+    let zero = false
+
+    for (let i = 0; i < 5; i++) {
+      let n = parseInt(prompt("Digite o " + (i + 1) + "º número:"))
+      
+      if (n === 0) zero = true
+    }
+
+    if (zero)
+      document.write("Foi digitado pelo menos um número igual a zero.")
+    else
+      document.write("Nenhum número zero foi digitado.")
+
+  </script>
+</body>
+</html>

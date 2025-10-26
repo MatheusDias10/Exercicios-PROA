@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 95</title>
+</head>
+<body>
+  <script>
+
+    let nomes = []
+
+    for (let i = 0; i < 5; i++) {
+      let nome = prompt("Digite o nome " + (i + 1) + ":")
+      nomes.push(nome)
+    }
+
+    nomes.sort()
+
+    document.write("Nomes em ordem alfabética: " + nomes.join(", "))
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 88</title>
+</head>
+<body>
+  <script>
+
+    let somaPares = 0, somaImpares = 0
+    let qtdPares = 0, qtdImpares = 0
+
+    for (let i = 0; i < 5; i++) {
+      let n = parseInt(prompt("Digite o " + (i + 1) + "º número:"))
+      
+      if (n % 2 === 0) {
+        somaPares += n
+        qtdPares++
+      } else {
+        somaImpares += n
+        qtdImpares++
+      }
+    }
+
+    let mediaPares = qtdPares > 0 ? (somaPares / qtdPares) : 0
+    let mediaImpares = qtdImpares > 0 ? (somaImpares / qtdImpares) : 0
+
+    document.write("Média dos pares: " + mediaPares.toFixed(2) + "<br>")
+    document.write("Média dos ímpares: " + mediaImpares.toFixed(2))
+  </script>
+</body>
+</html>

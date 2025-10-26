@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 106</title>
+</head>
+<body>
+  <script>
+
+    let a = [], b = []
+    let iguais = true
+
+    for (let i = 0; i < 2; i++) {
+      a[i] = []
+      b[i] = []
+      
+      for (let j = 0; j < 2; j++) {
+        a[i][j] = parseInt(prompt("A[" + i + "][" + j + "]:"))
+        b[i][j] = parseInt(prompt("B[" + i + "][" + j + "]:"))
+        if (a[i][j] !== b[i][j]) iguais = false
+      }
+    }
+
+    document.write(iguais ? "As matrizes são iguais." : "As matrizes são diferentes.")
+
+  </script>
+</body>
+</html>

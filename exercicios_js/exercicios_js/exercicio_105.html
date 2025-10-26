@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 105</title>
+</head>
+<body>
+  <script>
+    
+    let m = []
+    let somaColunas = [0, 0, 0, 0]
+
+    for (let i = 0; i < 4; i++) {
+      m[i] = []
+      for (let j = 0; j < 4; j++) {
+        m[i][j] = parseInt(prompt("Número [" + i + "][" + j + "]:"))
+        somaColunas[j] += m[i][j]
+      }
+    }
+
+    for (let j = 0; j < 4; j++) {
+      document.write("Soma da coluna " + (j + 1) + ": " + somaColunas[j] + "<br>")
+    }
+
+  </script>
+</body>
+</html>

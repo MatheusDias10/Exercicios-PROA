@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 85</title>
+</head>
+<body>
+  <script>
+
+    let numeros = []
+    for (let i = 0; i < 5; i++) {
+      numeros.push(parseInt(prompt("Digite o " + (i + 1) + " número:")))
+    }
+
+    let maior = Math.max(...numeros)
+    let menor = Math.min(...numeros)
+
+    document.write("Maior número: " + maior + "<br>")
+    document.write("Menor número: " + menor)
+
+  </script>
+</body>
+</html>

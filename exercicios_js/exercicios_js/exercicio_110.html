@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 110</title>
+</head>
+<body>
+  <script>
+
+    let a = [], b = [], sub = []
+
+    for (let i = 0; i < 2; i++) {
+      a[i] = []
+      b[i] = []
+      sub[i] = []
+
+      for (let j = 0; j < 2; j++) {
+        a[i][j] = parseInt(prompt("A[" + i + "][" + j + "]:"))
+        b[i][j] = parseInt(prompt("B[" + i + "][" + j + "]:"))
+        sub[i][j] = a[i][j] - b[i][j]
+      }
+    }
+
+    document.write("Subtração das matrizes:<br>")
+    
+    for (let i = 0; i < 2; i++) {
+      document.write(sub[i].join(" ") + "<br>")
+    }
+
+  </script>
+</body>
+</html>

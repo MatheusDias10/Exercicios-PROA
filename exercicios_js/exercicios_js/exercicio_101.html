@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 101</title>
+</head>
+<body>
+  <script>
+
+    let m = []
+    let soma = 0, cont = 0
+
+    for (let i = 0; i < 4; i++) {
+      m[i] = []
+      for (let j = 0; j < 4; j++) {
+        m[i][j] = parseInt(prompt("Número [" + i + "][" + j + "]:"))
+        soma += m[i][j]
+        cont++
+      }
+    }
+
+    let media = soma / cont
+
+    document.write("Média dos elementos: " + media.toFixed(2))
+    
+  </script>
+</body>
+</html>

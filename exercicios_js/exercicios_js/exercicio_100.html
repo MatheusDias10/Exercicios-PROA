@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 100</title>
+</head>
+<body>
+  <script>
+
+    let m = []
+    let maior = -Infinity
+
+    for (let i = 0; i < 3; i++) {
+      m[i] = []
+      for (let j = 0; j < 3; j++) {
+        m[i][j] = parseInt(prompt("Número [" + i + "][" + j + "]:"))
+        if (m[i][j] > maior) maior = m[i][j]
+      }
+    }
+
+    document.write("Maior valor da matriz: " + maior)
+    
+  </script>
+</body>
+</html>

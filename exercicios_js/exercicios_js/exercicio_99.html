@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 99</title>
+</head>
+<body>
+  <script>
+
+    let a = [], b = [], soma = []
+
+    for (let i = 0; i < 2; i++) {
+      a[i] = []
+      b[i] = []
+      soma[i] = []
+      
+      for (let j = 0; j < 2; j++) {
+        a[i][j] = parseInt(prompt("A[" + i + "][" + j + "]:"))
+        b[i][j] = parseInt(prompt("B[" + i + "][" + j + "]:"))
+        soma[i][j] = a[i][j] + b[i][j]
+      }
+    }
+
+    document.write("Soma das matrizes:<br>")
+
+    for (let i = 0; i < 2; i++) {
+      document.write(soma[i].join(" ") + "<br>")
+    }
+
+  </script>
+</body>
+</html>

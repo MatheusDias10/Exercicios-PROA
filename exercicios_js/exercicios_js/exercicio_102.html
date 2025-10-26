@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 102</title>
+</head>
+<body>
+  <script>
+
+    let a = [], b = [], produto = []
+
+    for (let i = 0; i < 2; i++) {
+      a[i] = []
+      b[i] = []
+      for (let j = 0; j < 2; j++) {
+        a[i][j] = parseInt(prompt("A[" + i + "][" + j + "]:"))
+        b[i][j] = parseInt(prompt("B[" + i + "][" + j + "]:"))
+      }
+    }
+
+    for (let i = 0; i < 2; i++) {
+      produto[i] = []
+      for (let j = 0; j < 2; j++) {
+        produto[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j]
+      }
+    }
+
+    document.write("Produto das matrizes:<br>")
+
+    for (let i = 0; i < 2; i++) {
+      document.write(produto[i].join(" ") + "<br>")
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 103</title>
+</head>
+<body>
+  <script>
+    
+    let m = []
+    let menor = Infinity
+
+    for (let i = 0; i < 3; i++) {
+      m[i] = []
+      for (let j = 0; j < 3; j++) {
+        m[i][j] = parseInt(prompt("Número [" + i + "][" + j + "]:"))
+        if (m[i][j] < menor) menor = m[i][j]
+      }
+    }
+
+    document.write("Menor valor da matriz: " + menor)
+
+  </script>
+</body>
+</html>
